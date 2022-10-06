@@ -21,17 +21,12 @@ public class Contador extends AppCompatActivity {
         radioReincia = findViewById(R.id.id_reinciador);
     }
 
-    public void contador(View view) {
-        if (radioAumenta.isSelected()) {
-            for (int i = 0; i < 1; i++) {
+    public void contar(View view) {
                 contador++;
+        numero.setText(String.valueOf(contador));
+            }
+    public void reiniciar(View view){
+                contador = 0;
+        numero.setText(String.valueOf(contador));
             }
         }
-        else if (radioReincia.isSelected()) {
-            contador = 0;
-        } else {
-            return;
-        }
-        numero.setText(String.valueOf(contador));
-    }
-}
