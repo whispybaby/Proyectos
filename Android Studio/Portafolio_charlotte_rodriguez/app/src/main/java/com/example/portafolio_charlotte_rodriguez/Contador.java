@@ -10,10 +10,11 @@ import android.widget.TextView;
 public class Contador extends AppCompatActivity {
     TextView numero;
     Button radioAumenta, radioReincia;
-
+    int contador;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        contador = 0;
         setContentView(R.layout.activity_contador);
         numero = findViewById(R.id.id_incremental);
         radioAumenta = findViewById(R.id.id_contador);
@@ -21,14 +22,13 @@ public class Contador extends AppCompatActivity {
     }
 
     public void contador(View view) {
-        int contador = 0;
         if (radioAumenta.isSelected()) {
             for (int i = 0; i < 1; i++) {
                 contador++;
             }
         }
         else if (radioReincia.isSelected()) {
-            contador = contador - contador;
+            contador = 0;
         } else {
             return;
         }
