@@ -38,4 +38,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i4 = new Intent(this, Checkbox.class);
         startActivity(i4);
     }
+
+    public void inciar_contador(View view){
+        Intent i5 = new Intent(this, Contador.class);
+        startActivity(i5);
+    }
 }

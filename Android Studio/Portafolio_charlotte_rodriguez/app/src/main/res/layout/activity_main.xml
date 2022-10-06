@@ -129,7 +129,7 @@
         android:layout_marginTop="40dp"
         android:background="#88624B"
         android:backgroundTint="#88624B"
-        android:onClick="iniciar_calculadora_binaria"
+        android:onClick="inciar_contador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -162,5 +162,16 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_binario"
+        app:layout_constraintStart_toEndOf="@+id/boton_binario"
+        app:layout_constraintTop_toTopOf="@+id/boton_binario"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/monitos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
