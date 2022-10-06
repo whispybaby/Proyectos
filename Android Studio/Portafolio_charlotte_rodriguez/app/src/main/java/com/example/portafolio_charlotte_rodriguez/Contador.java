@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RadioButton;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Contador extends AppCompatActivity {
     TextView numero;
-    RadioButton radioAumenta, radioReincia;
+    Button radioAumenta, radioReincia;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,14 +19,19 @@ public class Contador extends AppCompatActivity {
         radioAumenta = findViewById(R.id.id_contador);
         radioReincia = findViewById(R.id.id_reinciador);
     }
-    public void  contar (View view){
-        int  contador = 0;
-         if ( radioAumenta.isChecked()){
-            contador = contador  + 1;
-        }
-         else if (radioReincia.isChecked()){
-             contador = contador - contador;
-         }
 
-}
+    public void contador(View view) {
+        int contador = 0;
+        if (radioAumenta.isSelected()) {
+            for (int i = 0; i < 1; i++) {
+                contador++;
+            }
+        }
+        else if (radioReincia.isSelected()) {
+            contador = contador - contador;
+        } else {
+            return;
+        }
+        numero.setText(String.valueOf(contador));
     }
+}
