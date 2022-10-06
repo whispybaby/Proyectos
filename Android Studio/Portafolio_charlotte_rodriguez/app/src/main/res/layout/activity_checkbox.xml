@@ -4,6 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".Checkbox">
 
+    <EditText
+        android:id="@+id/etn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etn1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etn1"
+        app:layout_constraintTop_toBottomOf="@+id/etn1" />
+
+    <EditText
+        android:id="@+id/etn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="Checkbox"
+        android:textAlignment="center"
+        android:textColor="#1E1B1B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_sumar_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        app:layout_constraintEnd_toEndOf="@+id/cb_restar_checkbox"
+        app:layout_constraintStart_toStartOf="@+id/cb_restar_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/cb_restar_checkbox" />
+
+    <CheckBox
+        android:id="@+id/cb_restar_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Restar"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalcular_Checkbox"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalcular_Checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcular_Checkbox" />
+
+    <TextView
+        android:id="@+id/checkboxResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="@+id/etn2"
+        app:layout_constraintStart_toStartOf="@+id/etn2"
+        app:layout_constraintTop_toBottomOf="@+id/etn2" />
+
+    <Button
+        android:id="@+id/buttonCalcular_Checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/checkboxResultado"
+        app:layout_constraintStart_toStartOf="@+id/checkboxResultado"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxResultado" />
 </androidx.constraintlayout.widget.ConstraintLayout>

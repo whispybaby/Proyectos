@@ -14,31 +14,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:layout_marginBottom="44dp"
         android:text="Portafolio"
         android:textColor="#040302"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/boton_check"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/boton_eva"
         android:layout_width="69dp"
         android:layout_height="51dp"
-        android:layout_marginStart="36dp"
         android:backgroundTint="#88624B"
         android:contentDescription="TODO"
         android:onClick="iniciar_evaluacion"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/boton_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/boton_check"
         app:layout_constraintTop_toTopOf="@+id/boton_check"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/evaluacion"
         tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
@@ -46,11 +43,12 @@
         android:id="@+id/boton_check"
         android:layout_width="48dp"
         android:layout_height="46dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#88624B"
         android:onClick="iniciar_checkbox"
-        app:layout_constraintEnd_toEndOf="@+id/tv_portafolio"
-        app:layout_constraintStart_toStartOf="@+id/tv_portafolio"
+        app:layout_constraintEnd_toStartOf="@+id/boton_eva"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/boton_sum"
         app:layout_constraintTop_toBottomOf="@+id/tv_portafolio"
         app:srcCompat="@android:drawable/checkbox_on_background"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -59,39 +57,40 @@
         android:id="@+id/boton_sum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
         android:backgroundTint="#88624B"
         android:foregroundTint="#F14545"
         android:onClick="iniciar_calculador"
-        app:tint="#24201E"
         app:layout_constraintBottom_toBottomOf="@+id/boton_check"
         app:layout_constraintEnd_toStartOf="@+id/boton_check"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/boton_check"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="#24201E"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/tv_cal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:text="Calculadora"
         android:textColor="#24201E"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tx_checkbox"
         app:layout_constraintEnd_toEndOf="@+id/boton_sum"
-        app:layout_constraintStart_toStartOf="@+id/boton_sum"
-        app:layout_constraintTop_toBottomOf="@+id/boton_sum" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/boton_sum" />
 
     <TextView
         android:id="@+id/tx_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="26dp"
         android:text="Checkbox"
         android:textColor="#352924"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/boton_check"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/boton_check"
         app:layout_constraintTop_toBottomOf="@+id/boton_check" />
 
@@ -99,71 +98,69 @@
         android:id="@+id/tv_eval"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="Evaluacion"
         android:textColor="#24201E"
         android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tx_checkbox"
         app:layout_constraintEnd_toEndOf="@+id/boton_eva"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/boton_eva"
-        app:layout_constraintTop_toBottomOf="@+id/boton_eva" />
-
-    <ImageView
-        android:id="@+id/boton_binario"
-        android:layout_width="49dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="20dp"
-        android:background="#88624B"
-        android:backgroundTint="#88624B"
-        android:onClick="iniciar_calculadora_binaria"
-        app:layout_constraintEnd_toEndOf="@+id/tx_checkbox"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tx_checkbox"
-        app:layout_constraintTop_toBottomOf="@+id/tx_checkbox"
-        app:srcCompat="@drawable/monitos" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/boton_eva" />
 
     <TextView
         android:id="@+id/tv_binario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="26dp"
         android:fontFamily="sans-serif"
         android:text="Binario"
         android:textAlignment="center"
         android:textColor="#2A2624"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/boton_binario"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/boton_binario"
         app:layout_constraintTop_toBottomOf="@+id/boton_binario" />
+
+    <ImageView
+        android:id="@+id/boton_binario"
+        android:layout_width="49dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="#88624B"
+        android:backgroundTint="#88624B"
+        android:onClick="iniciar_calculadora_binaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eval"
+        app:srcCompat="@drawable/monitos" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="57dp"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="32dp"
         android:background="#88624B"
         android:onClick="iniciar_calculadora1"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_binario"
         app:layout_constraintEnd_toStartOf="@+id/boton_binario"
-        app:layout_constraintStart_toStartOf="@+id/tv_cal"
-        app:layout_constraintTop_toBottomOf="@+id/tv_cal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/boton_binario"
         app:srcCompat="@drawable/ddzz3h5_73daf458_9238_4286_9eb4_d0ab60a0b4bf" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="12dp"
         android:fontFamily="sans-serif"
         android:text="Calculadora pro"
         android:textAlignment="center"
         android:textColor="#2A2624"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/tv_binario"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_binario"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

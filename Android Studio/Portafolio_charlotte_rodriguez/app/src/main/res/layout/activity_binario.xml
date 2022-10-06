@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-tools:context=".Binario">
+    tools:context=".Binario">
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="269dp"
+        android:layout_width="409dp"
         android:layout_height="67dp"
         android:accessibilityLiveRegion="assertive"
         android:fontFamily="sans-serif-black"
@@ -21,74 +21,91 @@ tools:context=".Binario">
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="-2dp" />
 
     <CheckBox
-        android:id="@+id/cb_8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
+        android:id="@+id/cb_128"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:buttonTint="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_64"
+        app:layout_constraintEnd_toStartOf="@+id/cb_64"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_64"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_32"
+        app:layout_constraintEnd_toStartOf="@+id/cb_32"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_128" />
+
+    <CheckBox
+        android:id="@+id/cb_32"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_16"
+        app:layout_constraintEnd_toStartOf="@+id/cb_16"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_64" />
+
+    <CheckBox
+        android:id="@+id/cb_16"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="#000000"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_8"
         app:layout_constraintEnd_toStartOf="@+id/cb_8"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_32" />
+
+    <CheckBox
+        android:id="@+id/cb_8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:buttonTint="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_4"
+        app:layout_constraintEnd_toStartOf="@+id/cb_4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_16" />
 
     <CheckBox
         android:id="@+id/cb_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:buttonTint="#000000"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.452"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_2"
+        app:layout_constraintEnd_toStartOf="@+id/cb_2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_8" />
 
     <CheckBox
         android:id="@+id/cb_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:buttonTint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.722"
-        app:layout_constraintStart_toEndOf="@+id/cb_8"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/cb_1"
+        app:layout_constraintEnd_toStartOf="@+id/cb_1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cb_4" />
 
     <CheckBox
         android:id="@+id/cb_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
         android:buttonTint="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/cb_2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <Button
-        android:id="@+id/calcularbi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="104dp"
-        android:backgroundTint="#AC8972"
-        android:onClick="transformar"
-        android:text="Calcular"
-        android:textColor="#E5E5E5"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/cb_1"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/cb_8"
-        app:layout_constraintTop_toBottomOf="@+id/cb_8"
-        app:layout_constraintVertical_bias="0.022"
-        app:strokeColor="#CA9D81" />
 
     <TextView
         android:id="@+id/mostrarTextoresultado"
@@ -99,9 +116,31 @@ tools:context=".Binario">
         android:lineSpacingExtra="24sp"
         android:text="a"
         android:textColor="#030202"
-        app:layout_constraintBottom_toTopOf="@+id/calcularbi"
-        app:layout_constraintEnd_toEndOf="@+id/cb_1"
-        app:layout_constraintStart_toStartOf="@+id/cb_8"
-        app:layout_constraintTop_toBottomOf="@+id/cb_4" />/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_16" />
+
+    <Button
+        android:id="@+id/calcularbi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#AC8972"
+        android:onClick="transformar"
+        android:text="Calcular"
+        android:textColor="#E5E5E5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mostrarTextoresultado"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/mostrarTextoresultado"
+        app:layout_constraintTop_toBottomOf="@+id/mostrarTextoresultado"
+        app:strokeColor="#CA9D81" /><![CDATA[
+
+
+
+    />
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
