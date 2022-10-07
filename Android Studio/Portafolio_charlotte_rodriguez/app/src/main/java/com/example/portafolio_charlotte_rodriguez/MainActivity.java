@@ -43,4 +43,8 @@ public class MainActivity extends AppCompatActivity {
         Intent i5 = new Intent(this, Contador.class);
         startActivity(i5);
     }
+    public void iniciar_spinner(View view){
+        Intent i6 = new Intent( this, SpinnerActivity.class);
+        startActivity(i6);
+    }
 }
