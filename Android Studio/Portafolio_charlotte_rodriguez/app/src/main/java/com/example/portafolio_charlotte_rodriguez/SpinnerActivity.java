@@ -42,9 +42,12 @@ public class SpinnerActivity extends AppCompatActivity {
 
         else if (seleccion.equals("Dividir")){
             if (num2 == 0){
-                return;
+                mostrar.setText("no es posible dividir en 0");
             }
-            mostrar.setText(String.valueOf(}
+            else {
+                mostrar.setText(String.valueOf(num1/num2));
+            }
+        }
         else if (seleccion.equals("Sumar")){
             mostrar.setText(String.valueOf(num1+num2));
         }
