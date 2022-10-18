@@ -1,7 +1,10 @@
+
 {% extends 'personas/mastertemplate.html' %}
 {% block contenido %}
-    <form action="post">
+
+    <form method="post">
         {{form}}
+        {% csrf_token %}
         <div class="mt-3 text-end">
             <input type="submit" value="Guardar" class="btn btn-primary">
         </div>
