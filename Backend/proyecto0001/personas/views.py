@@ -15,6 +15,12 @@ def registrar (request):
     
     if request.method == "POST":
         print(request.POST)
+        formulario = FormPersona(request.POST)
+        if formulario.is_valid(): # linea que seleciona la validacion
+            formulario.save()
+            print('Valido')
+        else:
+            print('No valido')
     else:
         print("Porfavor ingrese un valor para que debe se ser valido")
     return render(request, 'personas/create.html', {
