@@ -57,4 +57,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i8 = new Intent( this, Firebase.class);
         startActivity(i8);
     }
+
+    public void iniciar_agenda(View view){
+        Intent i9 = new Intent( this, AgendaActivity.class);
+        startActivity(i9);
+    }
+
 }
