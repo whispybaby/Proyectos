@@ -52,4 +52,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i7 = new Intent( this, ListViewActivity.class);
         startActivity(i7);
     }
+
+    public void iniciar_data_base(View view){
+        Intent i8 = new Intent( this, Firebase.class);
+        startActivity(i8);
+    }
 }

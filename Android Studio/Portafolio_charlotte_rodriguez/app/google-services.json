@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "915651925832",
+    "firebase_url": "https://agendatelefonicacr-default-rtdb.firebaseio.com",
+    "project_id": "agendatelefonicacr",
+    "storage_bucket": "agendatelefonicacr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915651925832:android:fbf0f146f70b95b81c457d",
+        "android_client_info": {
+          "package_name": "com.example.portafolio_charlotte_rodriguez"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915651925832-uefh1i350549kmp8p5u0ks916mo8u178.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmPZZVhNTY0xj0H9ya6J5fhd45N7mnVPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915651925832-uefh1i350549kmp8p5u0ks916mo8u178.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

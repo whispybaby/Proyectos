@@ -11,8 +11,9 @@
         <entry key="app/src/main/res/layout/activity_checkbox.xml" value="0.6" />
         <entry key="app/src/main/res/layout/activity_contador.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_evaluacion.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_firebase.xml" value="0.3104166666666667" />
         <entry key="app/src/main/res/layout/activity_list_view.xml" value="0.4" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_main_spinner.xml" value="0.2328125" />
         <entry key="app/src/main/res/layout/activity_spinner.xml" value="0.536" />
         <entry key="app/src/main/res/layout/activity_sumar.xml" value="0.3104166666666667" />
