@@ -4,5 +4,8 @@ public class Contacto {
     private String nombre;
     private String numero;
 
-    public C
+    public Contacto(String numero, String nombre){
+        this.nombre = nombre;
+        this.numero = numero;
+    }
 }

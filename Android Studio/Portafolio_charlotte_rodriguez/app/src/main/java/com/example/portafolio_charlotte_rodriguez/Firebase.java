@@ -3,6 +3,7 @@ package com.example.portafolio_charlotte_rodriguez;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -11,7 +12,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Firebase extends AppCompatActivity {
     private EditText nombrecontactouwu, numerocontactouwu;
-    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +21,20 @@ public class Firebase extends AppCompatActivity {
    }
 
    public void  AgregarContacto(View view){
-    mDatabase = FirebaseDatabase.getInstance().getReference();
-    Contacto con = new Contacto (nombrecontactouwu.getText().toString(), numerocontactouwu.getText().toString());
+        String nombre = nombrecontactouwu.getText().toString();
+        String numero = numerocontactouwu.getText().toString();
+        try {
+            FirebaseDatabase database = FirebaseDatabase.getInstance();
+            DatabaseReference referencia = database.getReference("usuarios");
+        }
+        catch (Exception error){
+            Log.e("Portafolio", error.toString());
+        }
 
-}
+
+       //            //.getReference();
+
+        Contacto contacto = new Contacto(nombre, numero);
+        referencia.push().setValue(contacto);
+    }
 }

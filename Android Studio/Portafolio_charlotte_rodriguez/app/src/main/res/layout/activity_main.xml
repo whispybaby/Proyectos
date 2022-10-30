@@ -249,12 +249,12 @@
         android:layout_height="56dp"
         android:layout_marginTop="28dp"
         android:background="#607D8B"
-        android:onClick="iniciar_data_base"
+        android:onClick="iniciar_agenda"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:srcCompat="@drawable/descarga" />
+        app:srcCompat="@drawable/uwu" />
 
     <TextView
         android:id="@+id/textView9"
@@ -262,7 +262,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:contentDescription="Fire Base"
-        android:text="Fire Base"
+        android:text="Agenda"
         android:textAlignment="textStart"
         android:textColor="#060606"
         android:textStyle="bold"
@@ -270,18 +270,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="57dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="28dp"
-        android:background="#607D8B"
-        android:onClick="iniciar_agenda"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView8"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:srcCompat="@drawable/uwu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
