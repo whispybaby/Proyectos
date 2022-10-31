@@ -23,16 +23,8 @@ public class Firebase extends AppCompatActivity {
    public void  AgregarContacto(View view){
         String nombre = nombrecontactouwu.getText().toString();
         String numero = numerocontactouwu.getText().toString();
-        try {
-            FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference referencia = database.getReference("usuarios");
-        }
-        catch (Exception error){
-            Log.e("Portafolio", error.toString());
-        }
-
-
-       //            //.getReference();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference referencia = database.getReference("usuarios");
 
         Contacto contacto = new Contacto(nombre, numero);
         referencia.push().setValue(contacto);

@@ -11,4 +11,3 @@ class Personas(models.Model):
     cometario =  models.CharField(null=True,max_length=150)
     fono = models.IntegerField()
 
-# Create your models here.
