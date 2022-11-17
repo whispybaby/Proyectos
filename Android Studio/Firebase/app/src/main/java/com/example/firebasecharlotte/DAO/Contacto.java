@@ -1,10 +1,24 @@
 package com.example.firebasecharlotte.DAO;
 
-public class Contacto {
+import java.io.Serializable;
+
+public class Contacto implements Serializable {
+
     private String nombre;
     private String numero;
-    public  Contacto(){
 
+    @Override
+    public String toString() {
+        if (nombre == null){
+            return "Error al obtener el nombre";
+        }
+        else {
+            return nombre;
+        }
+
+    }
+
+    public  Contacto() {
     }
 
     public Contacto(String  nombre, String numero){

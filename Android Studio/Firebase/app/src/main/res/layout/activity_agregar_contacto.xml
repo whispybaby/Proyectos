@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/texturilla1"
     tools:context=".AgregarContactoActivity">
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="sans-serif-black"
         android:text="Ingreso de datos telefonicos"
-        android:textColor="#304FFE"
+        android:textColor="#404040"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/nombre_contacto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
 
     <EditText
         android:id="@+id/numero_contacto"
@@ -50,12 +53,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#9F9F9F"
         android:hint="Guardar"
         android:onClick="AgregarContacto"
         app:layout_constraintEnd_toEndOf="@+id/numero_contacto"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/numero_contacto"
-        app:layout_constraintTop_toBottomOf="@+id/numero_contacto" />
+        app:layout_constraintTop_toBottomOf="@+id/numero_contacto"
+        app:rippleColor="#624C4C"
+        app:strokeColor="#8B7E7E" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:srcCompat="@drawable/jj" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
