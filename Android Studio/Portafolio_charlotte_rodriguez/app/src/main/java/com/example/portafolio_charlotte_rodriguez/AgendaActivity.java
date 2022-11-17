@@ -23,7 +23,6 @@ public class AgendaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agenda);
-        listaContactos = findViewById(R.id.agLvListView);
 
         //Asignar el listView a su elemento correspondiente en el .xml
         listaContactos = findViewById(R.id.agLvListView);
