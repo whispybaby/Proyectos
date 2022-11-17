@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo"
-    tools:context=".AgendaActivity">
-
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView17"
@@ -32,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintStart_toStartOf="@+id/textView17"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:srcCompat="@drawable/azul" />
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
 
     <EditText
         android:id="@+id/editTextPersonName2"
@@ -56,7 +54,7 @@
         app:layout_constraintStart_toEndOf="@+id/editTextPersonName2"
         app:layout_constraintTop_toTopOf="@+id/editTextPersonName2"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/basurero" />
+        app:srcCompat="@android:drawable/ic_menu_search" />
 
     <ImageView
         android:id="@+id/imageButton10"
@@ -69,7 +67,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton9"
         app:layout_constraintTop_toTopOf="@+id/imageButton9"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/busqueda" />
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
     <ListView
         android:id="@+id/agLvListView"
@@ -81,4 +79,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPersonName2"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
