@@ -1,0 +1,17 @@
+{% extends 'plantilla.html' %}
+
+{% block contenido %}
+
+
+<div class="container">
+    <h1>Crear registro </h1>
+    <form method="post">  
+    {% csrf_token %}
+    {{ formulario }}
+    
+    <input type="submit" class="btn btn-secondary form-control" value="Enviar Registro de Usuario">
+    </form>
+</div>
+
+
+{% endblock contenido %}
