@@ -16,7 +16,7 @@
         android:text="Ingreso de datos telefonicos"
         android:textColor="#404040"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/nombre_contacto"
+        app:layout_constraintBottom_toTopOf="@+id/nombre_contacto1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,13 +30,13 @@
         android:layout_marginTop="68dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="@+id/nombre_contacto"
+        app:layout_constraintEnd_toEndOf="@+id/nombre_contacto1"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/nombre_contacto"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_contacto" />
+        app:layout_constraintStart_toStartOf="@+id/nombre_contacto1"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_contacto1" />
 
     <EditText
-        android:id="@+id/nombre_contacto"
+        android:id="@+id/nombre_contacto1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -60,8 +60,7 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/numero_contacto"
         app:layout_constraintTop_toBottomOf="@+id/numero_contacto"
-        app:rippleColor="#624C4C"
-        app:strokeColor="#8B7E7E" />
+        app:rippleColor="#624C4C" />
 
     <ImageView
         android:id="@+id/imageView"

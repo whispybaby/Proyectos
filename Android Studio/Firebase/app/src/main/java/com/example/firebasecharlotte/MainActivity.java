@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -17,7 +17,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;
 
-import java.io.Serializable;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 for (DataSnapshot contacto_actual : snapshot.getChildren()){
                     Contacto contacto = contacto_actual.getValue(Contacto.class);
                     //  Agrega los datos si no esta nulo
-
                     if (contacto != null) {
+                        contacto.setID(contacto_actual.getKey());
                         adaptador.add(contacto);
 
                     }
@@ -75,17 +75,17 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, AgregarContactoActivity.class);
         startActivity(i);
     }
-    public void iniciarVistaContacto(View view) {
-        Intent i = new Intent(this, VistaContactoActivity.class);
-        startActivity(i);
-    }
     public void iniciarInformacionContacto(Contacto contacto) {
         Bundle Extras = new Bundle();
         Extras.putSerializable("contacto" , contacto);
+
         Intent i = new Intent(this, InformacionActivity.class);
         i.putExtras(Extras);
         startActivity(i);
     }
+
+
 }
+
 
 

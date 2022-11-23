@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/texturilla1"
+    android:backgroundTint="#F7F2F2"
     tools:context=".MainActivity">
 
     <TextView
@@ -24,7 +25,7 @@
         android:id="@+id/imageButton8"
         android:layout_width="178dp"
         android:layout_height="117dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#686666"
         app:layout_constraintEnd_toEndOf="@+id/textView17"
         app:layout_constraintHorizontal_bias="0.505"
@@ -74,6 +75,24 @@
         app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#CB1A1A"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:iconTint="#AA0E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#624C4C"
+        app:strokeColor="#8B7E7E" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

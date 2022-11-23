@@ -52,6 +52,7 @@
         android:layout_height="46dp"
         android:layout_marginStart="12dp"
         android:backgroundTint="#686666"
+        android:onClick="iniciarActualizar_informacion"
         app:layout_constraintBottom_toBottomOf="@+id/editTextPersonName2"
         app:layout_constraintStart_toEndOf="@+id/editTextPersonName2"
         app:layout_constraintTop_toTopOf="@+id/editTextPersonName2"

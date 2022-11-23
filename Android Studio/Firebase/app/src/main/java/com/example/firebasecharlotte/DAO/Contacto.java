@@ -3,9 +3,19 @@ package com.example.firebasecharlotte.DAO;
 import java.io.Serializable;
 
 public class Contacto implements Serializable {
+    private String ID;
+
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 
     private String nombre;
     private String numero;
+
 
     @Override
     public String toString() {
@@ -49,6 +59,7 @@ public class Contacto implements Serializable {
     public void setNumero(String numero) {
         this.numero = numero;
     }
+
 }
 
 

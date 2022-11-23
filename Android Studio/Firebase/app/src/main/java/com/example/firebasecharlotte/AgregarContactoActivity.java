@@ -15,7 +15,7 @@ public class AgregarContactoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_contacto);
-        nombrecontactouwu = findViewById(R.id.nombre_contacto);
+        nombrecontactouwu = findViewById(R.id.nombre_contacto1);
         numerocontactouwu = findViewById(R.id.numero_contacto);
     }
     public void  AgregarContacto(View view){
