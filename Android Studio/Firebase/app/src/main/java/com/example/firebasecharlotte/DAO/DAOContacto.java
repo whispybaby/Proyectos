@@ -12,9 +12,12 @@ public class DAOContacto {
     public  DatabaseReference getReferencia(){
         return  referencia;
     }
-    public  void InsertarContacto(Contacto contacto){
+    public  void InsertarContacto(Contacto contacto) {
         referencia.push().setValue(contacto);
     }
-
+    public void actualizarcontacto(Contacto contacto){
+        String id = contacto.getID();
+        referencia.child(id).setValue(contacto);
+    }
 
 }

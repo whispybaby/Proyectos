@@ -35,7 +35,7 @@
         app:srcCompat="@drawable/aaaa" />
 
     <EditText
-        android:id="@+id/editTextPersonName2"
+        android:id="@+id/buscador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -52,10 +52,10 @@
         android:layout_height="46dp"
         android:layout_marginStart="12dp"
         android:backgroundTint="#686666"
-        android:onClick="iniciarActualizar_informacion"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextPersonName2"
-        app:layout_constraintStart_toEndOf="@+id/editTextPersonName2"
-        app:layout_constraintTop_toTopOf="@+id/editTextPersonName2"
+        android:onClick="BuscarContactos"
+        app:layout_constraintBottom_toBottomOf="@+id/buscador"
+        app:layout_constraintStart_toEndOf="@+id/buscador"
+        app:layout_constraintTop_toTopOf="@+id/buscador"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/ic_menu_search" />
 
@@ -64,6 +64,7 @@
         android:layout_width="45dp"
         android:layout_height="44dp"
         android:backgroundTint="#686666"
+        android:onClick="Dejardebuscar"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -80,7 +81,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/buscador"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
