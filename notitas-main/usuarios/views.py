@@ -49,6 +49,7 @@ def iniciar(request):
     if request.method == "POST":
         formulario = IniciarSesion(request.POST)
         if formulario.is_valid():
+
             nombre_usuario = formulario.cleaned_data.get("nombre_usuario")
             contraseña = formulario.cleaned_data.get("contraseña")
             # obtener usuario con correo
